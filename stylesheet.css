@@ -1,64 +1,82 @@
-           footer {
-                display: flex;
-                flex-flow: row wrap;
-                padding: 50px;
-                background-color: rgb(0, 110, 255);
-                color: #fff;
-            }
-            
-           .footer-logo {
-                font-size: 30px;
-                font-weight: bold;
-            }
-            
-            .footer-left {
-                margin-right: 420px;
-                margin-top: 40px;
-                text-align: left;
-            }
-            
-            .footer-left h3 {
-                font-weight: lighter;
-            }
-            
-            .footer-right>* {
-                flex: 1 50%;
-            }
-            
-            .footer-right {
-                margin-top: 40px;
-            }
-            
-            .footer-right h4 {
-                font-size: 18px;
-                opacity: 0.8;
-            }
-            
-            .footer-right p {
-                font-size: 15px;
-                opacity: 0.8;
-            }
-            
-            .footer-bottom {
-                margin-top: 40px;
-                margin-left: 500px;
-            }
-            
-            .footer-bottom p {
-                font-size: 15px;
-                opacity: 0.8;
-            }
-            
-            
-            @media (max-width: 768px) {
-                .footer {
-                    width: 100%;
-                    float: none;
-                }
-            }
-            
-            @keyframes puterin {
-                100% {
-                    transform: rotate(360deg);
-                }
-            }
+footer{
+    background-color: rgb(0, 110, 255);
+}
+.footer-content {
+    display:flex;
+    flex-flow: row wrap;
+    padding: 25px;
+    color: #fff;    
+}
+
+.footer-content>* {
+    flex: 1 100%;
+}
+
+.footer-logo {
+    padding-left: 50px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-left {
+    padding-left: 30px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.footer-left h3 {
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.footer-right>* {
+    flex: 1 50%;
+}
+
+.footer-right {
+    margin-top: 10px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.footer-right h4 {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.footer-right p {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    text-align: center;
+    background-color: rgb(0, 110, 255);
+    color:white;
+    padding-bottom: 20px;
+}
+
+.footer-bottom p {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+@media (min-width: 600px) {
+    .footer-right>* {
+        flex: 1;
+    }
+    .footer-left {
+        flex: 1 0px;
+    }
+    .footer-right {
+        flex: 2 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        padding: 15px;
+    }
+}
