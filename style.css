@@ -1,3 +1,4 @@
+html, body {margin:0; padding:0;}
 #landing, #landing *, #landing :before, #landing :after {
   position:relative;
   margin:0;
@@ -30,22 +31,7 @@
   color:#fff;
   transition:background .4s, color .4s, border-color .4s;
 }
-#landing .login {
-    display:inline-block;
-    padding:.75em 1.4em;
-    border-radius:2em;
-    font-weight:bold;
-    line-height:normal;
-    text-align:center;
-    text-decoration:none;
-    text-transform:uppercase;
-    background-color:#01b0fe;
-    border:.125em solid #01b0fe;
-    color:#fff;
-    transition:background .4s, color .4s, border-color .4s;
-  }
 #landing .button:hover {background:transparent; color:#99ce45;}
-#landing .login:hover {background:transparent; color:#01b0fe;}
 #landing .button:active {opacity:.5;}
 #landing .button-blue {background:#01b0fe; border-color:#01b0fe;}
 #landing .button-blue:hover {background:transparent; color:#01b0fe;}
@@ -57,37 +43,52 @@
   right:0;
   top:0;
   height:4.0625em;
+  z-index:100;
   background:rgba(255,255,255,.9);
-  padding-top:.9em ;
+  padding:.9em 1.25em;
   line-height:2em;
-  text-align:left;
+  text-align:right;
   border-bottom:1px solid rgba(0,0,0,.1);
+  word-spacing:2.5em;
 }
-#landing > .header > .logo1 {
-    font-weight:bold;
-    font-style: italic;
-    font-size: 28px;
-    color:black;
-    margin-left: 50px; 
+#landing > .header > * {display:inline-block; word-spacing:normal;}
+#landing > .header > .logo {
+  display:inline-block;
+  position:absolute;
+  left:2em;
+  width:12.66%;
+  max-width:11.8em;
+  letter-spacing:-.5em;
+  white-space:nowrap;
+  color:transparent;
+  overflow:hidden;
+  background:url('img/logo.png') no-repeat center left;
+  background-size:contain;
 }
-#landing > .header > .logo2 {
-    padding-top: 8px;
-    font-weight:bold;
-    font-size: 16px;
-    color:#03b4fe;
-    margin-right: 825px; 
-}
-#landing > .header > .button {
-    font-size:.75em;
-    border-width:.18em;
-    margin-right: 25px;
-}
-
+#landing > .header > .button {font-size:.75em; border-width:.18em;}
 #landing > .header > .login {
-    font-size:.75em; 
-    border-width:.18em;
+  font-size:.875em;
+  color:#03b4fe;
+  font-weight:bold;
+  text-decoration:none;
+  text-transform:uppercase;
+  transition:all .2s;
+  border:0 solid transparent;
 }
-
+#landing > .header > .login:before {
+  content:"";
+  display:inline-block;
+  width:1.429em;
+  height:1.429em;
+  margin:-.2em .5em 0 0;
+  background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAAUVBMVEUAAAABsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4BsP4pJ89bAAAAGnRSTlMA3etU5rMKqwaJW0hPRNAR88qUaybCgWI/MCVqoPAAAAC5SURBVBjTTZBXssMwDAOpZsmOS9or2fsfNBgqynh/RGKIIURzWqqBa6ip2ZcUgJyBkIY2Q1kns2ktMA8tXuzDJXY1EZ96Xr/zv55nJGlHZlOzIh4qNnKzhWIiIIKJwmKV1URGRHNP1cikaooueikD2cSBc3STXeURBVG8jLjdl4rNPvZKT77D3vNTRyS7wc1GpJY1Ov3tnvNxaDA3/2bhy08k9YOcGWe6c+J+PrLjRx60pQYpdWnevgG0mRAe7+n/PQAAAABJRU5ErkJggg==") no-repeat center center;
+  background-size:contain;
+}
+#landing > .header > .login:hover {
+  border:.166em solid #03b4fe;
+  border-radius:2em;
+  padding:0 1em;
+}
 #landing > .menu {
   text-align:center;
   background:#01b0fe;
