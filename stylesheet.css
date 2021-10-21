@@ -49,22 +49,16 @@
                 opacity: 0.8;
             }
             
-            @media (min-width: 768px) {
-                .footer-right>* {
-                    flex: 1;
-                }
-                .footer-left {
-                    flex: 1 0px;
-                }
-                .footer-right {
-                    flex: 2 0px;
-                }
-            }
             
             @media (max-width: 768px) {
                 .footer {
-                    padding: 15px;
                     width: 100%;
                     float: none;
+                }
+            }
+            
+            @keyframes puterin {
+                100% {
+                    transform: rotate(360deg);
                 }
             }

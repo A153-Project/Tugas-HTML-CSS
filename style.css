@@ -9,7 +9,7 @@ html, body {margin:0; padding:0;}
   font-family:Montserrat, Arial, Helvetica, Tahoma, Verdana, sans-serif;
 }
 #landing {
-  width:auto;
+  width:max-content;
   font-size:16px;
   padding-top:4.0625em;
   background:#fff;
