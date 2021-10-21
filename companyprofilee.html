@@ -1,11 +1,87 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
+ <title>Company Profil - www.Asuransi_A153.com</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="landing">
+ 
+  <div class="header">
+    <a  class="logo1">Asuransi</a>
+    <a  class="logo2">_A153.com</a>
+    <a  class="button">Create Account</a>
+    <a  class="login">Login</a>
+  </div>
+  <div class="slider slider-1">
+    <img class="ratio" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" />
+    <input class="slide" type="radio" name="slider-1" id="s-1-1" /><label for="s-1-1"></label>
+    <div>
+      <img src="img/bg1.jpg" />
+      <div class="content">
+        <h3>Perusahaan Asuransi A153</h3>
+        <p>Kami Hadir Untuk Menjadi Perusahaan Asuransi Terbaik Keluarga Anda</p>
+        <a href="#" class="button button-blue">Mulai</a>
+      </div>
+    </div>
+    <input class="slide" type="radio" name="slider-1" id="s-1-2" /><label for="s-1-2"></label>
+    <div>
+      <img src="img/bg2.jpg" />
+      <div class="content">
+        <h3>Perusahaan Asuransi A153</h3>
+        <p>Bekerjasama dengan semua Rumah Sakit baik swasta/pemerintah di seluruh Indonesia</p>
+        <a href="#" class="button button-orange">Alamat</a>
+      </div>
+    </div>
+    <input class="slide" type="radio" name="slider-1" id="s-1-3" checked /><label for="s-1-3"></label>
+    <div>
+      <img src="img/bg3.jpg" />
+      <div class="content">
+        <h3>Perusahaan Asuransi A153</h3>
+        <p>Melayani dengan tulus sepenuh hati...</p>
+        <a href="#" class="button button">Coba Sekarang</a>
+      </div>
+    </div>
+    <style type="text/css">
+      #landing .slider-1 img.ratio {padding:0 33%;}
+      #landing .slider-1 .content {max-width:33%; margin:5% 0 0 18%;}
+      #landing .slider-1 .content h3 {color:#fff; font-size:2.125em; font-weight:normal; margin:0 0 4%;}
+      #landing .slider-1 .content p {color:#fff; font-size:1.1em; font-weight:normal;}
+      #landing .slider-1 .button {position:absolute; bottom:17%; min-width:12.5em; font-size:.95em; font-weight:normal; border-width:.14em;}
+    </style>
+  </div>
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Kontak</a>
+    <a href="#">Testimoni</a>
+    <a href="#">Review</a>
+  </div>
+<script type="text/javascript">
+ function doSlide (slider) {
+  var id, o = slider.querySelectorAll("input.slide"), last = o.length-1, current = slider.querySelector("input.slide:checked");
+  for (var i=0; i<o.length; i++) if (o[i] === current) {id = i; break;}
+  o[id >= last ? 0 : id + 1].click();
+}
+function onSlide (e) {
+  var o = e.target.parentNode;
+  clearTimeout(o.autoslider);
+  o.autoslider = setTimeout(function(){doSlide(o);}, 7e3);
+}
+$(function(){
+  $(document).on("click", "input.slide", onSlide);
+  $(".slider").each(function(){doSlide(this)});
+});
+</script>
+</div>
+</body>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Siti Nur Maela</title>
-    <link rel="stylesheet" type "text/css" href="stylecompanyprofile.css">
+    <link rel="stylesheet" type="text/css" href="stylecompanyprofile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </head>
