@@ -38,7 +38,7 @@ html, body {margin:0; padding:0;}
 #landing .button-orange {background:#fe8f4f; border-color:#fe8f4f;}
 #landing .button-orange:hover {background:transparent; color:#fe8f4f;}
 #landing > .header {
-  position:fixed;
+  position:absolute;
   left:0;
   right:0;
   top:0;

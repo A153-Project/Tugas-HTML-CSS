@@ -77,10 +77,6 @@ function onSlide (e) {
   clearTimeout(o.autoslider);
   o.autoslider = setTimeout(function(){doSlide(o);}, 7e3);
 }
-$(function(){
-  $(document).on("click", "input.slide", onSlide);
-  $(".slider").each(function(){doSlide(this)});
-});
 </script>
 </div>
 </body>
@@ -153,8 +149,6 @@ $(function(){
       <title>Asuransi _A153.com</title>
       <link rel="stylesheet" href="stylesheet.css">
   </head>
-  
-  <body>
       <footer>
           <div class="footer-logo">Asuransi _A153.com</div>
           <div class="footer-left">
@@ -177,4 +171,3 @@ $(function(){
               <p>&copy;2021 all Right reserved by Asuransi A153</p>
           </div>
       </footer>
-  </body>
